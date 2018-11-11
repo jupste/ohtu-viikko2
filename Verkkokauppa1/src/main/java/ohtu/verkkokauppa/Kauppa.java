@@ -15,6 +15,10 @@ public class Kauppa implements KauppaInterface {
         kaupanTili = "33333-44455";
     }
 
+    public VarastoInterface getVarasto() {
+        return varasto;
+    }
+
     @Override
     public void aloitaAsiointi() {
         ostoskori = new Ostoskori();
